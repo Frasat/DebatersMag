@@ -19,8 +19,13 @@ namespace DebatersMag.Controllers
 
         public IActionResult Index()
         {
+//Welcome.Text = "Hi " + OurDBContext<Users>.Model.FirstName;
+            //  Users U = new Users();
+            //  ViewBag.Name = User.Identity.Name.ToString();
             return View();
+            
         }
+
         [HttpGet]
         public IActionResult AddUser()
         {
@@ -47,6 +52,25 @@ namespace DebatersMag.Controllers
                 }
             }
             return View();
+        }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(string useremail, string userpassword)
+        {
+            Users obj = OurDBContext.Users.Where(abc => abc.Email == useremail).FirstOrDefault();
+            if (obj.Password == userpassword)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+
         }
     }
 }

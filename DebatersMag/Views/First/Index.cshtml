@@ -1,0 +1,20 @@
+﻿@model DebatersMag.Models.Users
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+
+<h4>Welcome @Model.Users.FirstName)</h4>
+<hr />
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div> 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
