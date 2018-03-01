@@ -15,12 +15,12 @@ namespace DebatersMag.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+       // public IActionResult About()
+       // {
+       //     ViewData["Message"] = "Your application description page.";
 
-            return View();
-        }
+       //     return View();
+       // }
 
         public IActionResult Contact()
         {
@@ -28,7 +28,30 @@ namespace DebatersMag.Controllers
 
             return View();
         }
+        public IActionResult Magazine()
+        {
+            ViewData["Message"] = "Your contact page.";
 
+            return View();
+        }
+        public IActionResult Debate()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+        public IActionResult Profile()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+        public IActionResult AboutUs()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

@@ -17,12 +17,12 @@
             
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
-                <input  asp-for="Email" type="email" id="useremail" name="useremail"class="form-control,glyphicon glyphicon-envelope"  /> 
+                <input  asp-for="Email" type="email" id="useremail" name="useremail"class="form-control"  /> 
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Password"  class="control-label"></label>
-                <input  asp-for="Password" type="password" id="userpassword" name="userpassword"class="form-control,glyphicons-eye-close"/> 
+                <input  asp-for="Password" type="password" id="userpassword" name="userpassword"class="form-control"/> 
                 <span asp-validation-for="Password"  class="text-danger"></span>
             </div>
           
@@ -34,7 +34,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="AddUser">SignUp</a>
 </div>
 
 @section Scripts {

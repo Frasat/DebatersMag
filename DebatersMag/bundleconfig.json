@@ -2,16 +2,44 @@
 // More info at https://go.microsoft.com/fwlink/?LinkId=808241
 [
   {
-    "outputFileName": "wwwroot/css/site.min.css",
+    "outputFileName": "wwwroot/css/style.css",
     // An array of relative input file paths. Globbing patterns supported
     "inputFiles": [
-      "wwwroot/css/site.css"
+      "wwwroot/css/site.css",
+      "wwwroot/css/style.css",
+      "wwwroot/css/slick.css",
+      "wwwroot/css/slick-theme.css",
+      "wwwroot/css/animate.css",
+      "wwwroot/css/fonticons.css",
+      "wwwroot/css/font-awesome.min.css",
+      "wwwroot/css/bootstrap.css",
+      "wwwroot/css/magnific-popup.css",
+      "wwwroot/css/bootsnav.css",
+      "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+      "https://fonts.googleapis.com/css?family=Raleway:400,600,700",
+      "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700",
+      "wwwroot/css/responsive.css",
+      "wwwroot/css/colors/maron.css",
+      "wwwroot/css/plugins.css",
+      "wwwroot/css/style.css"
     ]
   },
   {
-    "outputFileName": "wwwroot/js/site.min.js",
+    "outputFileName": "wwwroot/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
     "inputFiles": [
-      "wwwroot/js/site.js"
+      "wwwroot/js/site.js",
+      "wwwroot/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
+      "wwwroot/js/vendor/jquery-1.11.2.min.js",
+      "wwwroot/js/vendor/bootstrap.min.js",
+      "wwwroot/js/jquery.magnific-popup.js",
+      "wwwroot/js/jquery.easing.1.3.js",
+      "wwwroot/js/slick.min.js",
+      "wwwroot/js/jquery.collapse.js",
+      "wwwroot/js/bootsnav.js",
+      "wwwroot/js/gmaps.min.js",
+      "http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8",
+      "wwwroot/js/plugins.js",
+      "wwwroot/js/main.js"
     ],
     // Optionally specify minification options
     "minify": {

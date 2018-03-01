@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using DebatersMag.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
 namespace DebatersMag.Controllers
 {
     public class FirstController : Controller
@@ -19,7 +14,8 @@ namespace DebatersMag.Controllers
 
         public IActionResult Index()
         {
-//Welcome.Text = "Hi " + OurDBContext<Users>.Model.FirstName;
+           // ViewBag.Username = System.Web.HttpContext.Current.User;
+            //Welcome.Text = "Hi " + OurDBContext<Users>.Model.FirstName;
             //  Users U = new Users();
             //  ViewBag.Name = User.Identity.Name.ToString();
             return View();
@@ -64,6 +60,8 @@ namespace DebatersMag.Controllers
             Users obj = OurDBContext.Users.Where(abc => abc.Email == useremail).FirstOrDefault();
             if (obj.Password == userpassword)
             {
+              //  lblUsername.Text = Session("username");
+                //  Session["username"] = TextBox1.Text;
                 return RedirectToAction("Index");
             }
             else

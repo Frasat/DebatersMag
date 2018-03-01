@@ -66,7 +66,7 @@ namespace DebatersMag
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=First}/{action=AddUser}/{id?}");
+                    template: "{controller=Main}/{action=Index}/{id?}");
             });
         }
     }
