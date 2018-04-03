@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.ico">
     <!--Google Font link-->
+    <link href="~/Theme/assets/css/mag-img-slider.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts1.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts2.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts3.css" rel="stylesheet" />
     @*<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">*@
     @*<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">*@
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">*@
 
     <link rel="stylesheet" href="~/Theme/assets/css/slick.css">
     <link rel="stylesheet" href="~/Theme/assets/css/slick-theme.css">
@@ -32,6 +33,7 @@
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="~/Theme/assets/js/mag-img-slider.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -344,43 +346,125 @@
                     <div class="main_service roomy-100">
                         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                             <div class="head_title text-center">
-                                <h2>OUR SERVICES</h2>
+                                <h2>MAGAZINE</h2>
                                 <div class="separator_auto"></div>
-                                <p>
-                                    Text
-                                </p>
+                                <!--you can copy the below code to your htm
+    page-----------------------------begin--->
+                                <!--change the width and height value as you want.-->
+                                <!-- Do change "index.htm" to your real html name of the flippingbook-->
+                                <iframe style="width:100%;height:650px" src="http://online.fliphtml5.com/pnrb/kzqr/"
+                                        seamless="seamless" scrolling="no" frameborder="0"
+                                        allowtransparency="true"></iframe>
+
+                                <!--you can copy the above code to your htm
+    page-----------------------------end--->
+
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="service_item">
-                                <i class="icofont icofont-light-bulb"></i>
-                                <h6 class="m-top-30">BRANDING</h6>
-                                <div class="separator_small"></div>
-                                <p>
-                                    Text
-                                </p>
+                        @*Mag-Image-Slider*@
+                        <div class="container">
+                            <div class="col-md-12">
+                                <h1>Our Publications</h1>
+                                <div class="well">
+                                    <div id="myCarousel" class="carousel slide">
+
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <a href="http://online.fliphtml5.com/pnrb/kzqr/"><img src="~/Theme/assets/images/mag-img1.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x"><img src="~/Theme/assets/images/mag-img2.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x"><img src="~/Theme/assets/images/mag-img3.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x"><img src="~/Theme/assets/images/mag-img4.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/row-->
+                                            </div>
+                                            <!--/item-->
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="~/Theme/assets/images/mag-img5.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="~/Theme/assets/images/mag-img6.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="~/Theme/assets/images/mag-img7.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="~/Theme/assets/images/mag-img8.jpeg" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/row-->
+                                            </div>
+                                            <!--/item-->
+                                            <div class="item">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-responsive"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/row-->
+                                            </div>
+                                            <!--/item-->
+                                        </div>
+                                        <!--/carousel-inner-->
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                                    </div>
+                                    <!--/myCarousel-->
+                                </div>
+                                <!--/well-->
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="service_item">
-                                <i class="icofont icofont-imac"></i>
-                                <h6 class="m-top-30">BRANDING</h6>
-                                <div class="separator_small"></div>
-                                <p>
-                                    Text
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="service_item">
-                                <i class="icofont icofont-video"></i>
-                                <h6 class="m-top-30">BRANDING</h6>
-                                <div class="separator_small"></div>
-                                <p>
-                                    Text
-                                </p>
-                            </div>
-                        </div>
+                        @*End-of-Mag-Image-Slider*@
+                        @*  <div class="col-md-4">
+            <div class="service_item">
+                <i class="icofont icofont-light-bulb"></i>
+                <h6 class="m-top-30">BRANDING</h6>
+                <div class="separator_small"></div>
+                <p>
+                    Text
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service_item">
+                <i class="icofont icofont-imac"></i>
+                <h6 class="m-top-30">BRANDING</h6>
+                <div class="separator_small"></div>
+                <p>
+                    Text
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service_item">
+                <i class="icofont icofont-video"></i>
+                <h6 class="m-top-30">BRANDING</h6>
+                <div class="separator_small"></div>
+                <p>
+                    Text
+                </p>
+            </div>
+        </div>*@
                     </div>
                 </div><!--End off row -->
             </div><!--End off container -->
@@ -954,7 +1038,7 @@
     <script src="~/Theme/assets/js/slick.min.js"></script>
     <script src="~/Theme/assets/js/jquery.collapse.js"></script>
     <script src="~/Theme/assets/js/bootsnav.js"></script>
-
+    <script src="~/Theme/assets/js/mag-img-slider.js"></script>
     <!-- paradise slider js -->
 
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
