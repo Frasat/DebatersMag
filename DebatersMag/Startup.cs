@@ -42,8 +42,12 @@ namespace DebatersMag
             services.AddDbContext<DebmagContext>(options =>
                options.UseSqlServer(Configuration.GetConnectionString("ConStr")));
             services.AddMvc();
-
-         //   _testSecret = Configuration["MySecret"];
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+            //   _testSecret = Configuration["MySecret"];
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
