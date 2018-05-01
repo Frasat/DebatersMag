@@ -107,10 +107,10 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="#brand">
+                 @*  <a class="navbar-brand" href="#brand">
                         <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
                         <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
-                    </a>
+                    </a>*@
                 </div>
                 <!-- End Header Navigation -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -119,8 +119,8 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#debates">Debates</a></li>
                         <li><a href="#mag">Magzines</a></li>
-                        <li><a href="#profile">Profile</a></li>
-                        <li><a href="#events">Events</a></li>
+                       @* <li><a href="#profile">Profile</a></li>*@
+                       @* <li><a href="#events">Events</a></li>*@
                         <li><a href="#about">About us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -131,16 +131,16 @@
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                    <h6 class="title">Custom Pages</h6>
+                    <h6 class="title">jOIN US</h6>
                     <ul class="link">
 
 
-                        <li><a href="#">Add Debate</a></li>
-                        <li> <a href=" #"> Write Debate</a></li>
-                        <li> <a href="#">Edit Debate</a> </li>
+                        <li><a href="/First/Login">Sign In</a></li>
+                        <li> <a href="/First/AddUser"> Sign Up</a></li>
+                      @*  <li> <a href="#">Edit Debate</a> </li>
                         <li><a href="#">Order Debate</a></li>
                         <li><a href="#"> Add Article</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>*@
                     </ul>
                 </div>
 
@@ -148,7 +148,7 @@
 
 
 
-                <div class="widget">
+           @*    <div class="widget">
                     <h6 class="title">Additional Links</h6>
                     <ul class="link">
                         <li><a href="#"></a></li>
@@ -156,7 +156,7 @@
                         <li><a href="#">Achievements</a></li>
                         <li><a href="#">Discussion </a></li>
                     </ul>
-                </div>
+                </div>*@
             </div>
             <!-- End Side Menu -->
         </nav>
@@ -181,79 +181,98 @@
         <!--Debates Sections-->
         <section id="debates" class="about roomy-100">
             <div class="container">
-                <div class="row">
-                    <div class="main_about">
-                        <div class="col-md-6">
-                            <div class="about_content">
-                                <h2>ABOUT DEBATER'S MAG</h2>
-                                <div class="separator_left"></div>
-                                <p>
-                                    We will provide Debate  on your Demand.
-                                </p>
-                                @* <div class="about_btns m-top-40">
-                                    <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
-                                </div>*@
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about_accordion wow fadeIn">
-                                <div id="faq_main_content" class="faq_main_content">
-                                    Master
-                                    <h6><i class="fa fa-angle-right"></i> DEBATES </h6>
-
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                We will provide debates for every special events on your demand and ehance creativity  with Articles.
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-1 -->
-
-                                    <h6 class="open"><i class="fa fa-angle-right"></i> OUR MAGAZINE</h6>
-
-                                    <div class="open">
-                                        <div class="content">
-                                            <p>
-                                                Farah Riaz
-                                                Raiyha Maryam
-                                                Safa Shakir
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-2 -->
-                                    <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                Text
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-3 -->
-                                    <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
-
-
-
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                On Demand
-                                                For every event
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-4 -->
+                <div class="container">
+                    <div class="head_title text-center">
+                        <h2>DEBATES</h2>
+                        <div class="separator_auto"></div>
+                        <div class="row">
+                            <div class="main_impress text-center">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <h2 class="text-white text-uppercase">Impressed?  Let’s work together</h2>
+                                    <p class="m-top-40 text-white">
+                                        Text
+                                    </p>
+                                    <div class="impress_btns m-top-30">
+                                        <a href="/Main/Article" class="btn btn-primary m-top-20">view all debates</a>
+                                        <a href="" class="btn btn-default m-top-20">HIRE US</a>
+                                    </div>
                                 </div>
                             </div>
+                        </div><!--End off row -->
+                    </div><!--End off container -->
+                    @*<div class="row">
+            <div class="main_about">
+                <div class="col-md-6">
+                    <div class="about_content">
+                        <h2>ABOUT DEBATER'S MAG</h2>
+                        <div class="separator_left"></div>
+                        <p>
+                            We will provide Debate  on your Demand.
+                        </p>
+                        @* <div class="about_btns m-top-40">
+                            <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
                         </div>
                     </div>
-                </div><!--End off row-->
-            </div><!--End off container -->
-            <br />
+                </div>
+                <div class="col-md-6">
+                    <div class="about_accordion wow fadeIn">
+                        <div id="faq_main_content" class="faq_main_content">
+                            Master
+                            <h6><i class="fa fa-angle-right"></i> DEBATES </h6>
+
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        We will provide debates for every special events on your demand and ehance creativity  with Articles.
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-1 -->
+
+                            <h6 class="open"><i class="fa fa-angle-right"></i> OUR MAGAZINE</h6>
+
+                            <div class="open">
+                                <div class="content">
+                                    <p>
+                                        Farah Riaz
+                                        Raiyha Maryam
+                                        Safa Shakir
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-2 -->
+                            <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        Text
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-3 -->
+                            <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
+
+
+
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        On Demand
+                                        For every event
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-4 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--End off row-->*@
+                </div><!--End off container -->
+            @* <br />
             <br />
             <br />
             <br />
             <hr />
             <br />
-            <br />
-            <div class="container">
+            <br />*@
+            @*   <div class="container">
                 <div class="row">
                     <div class="about_bottom_content">
                         <div class="col-md-4">
@@ -297,7 +316,7 @@
                         </div>
                     </div>
                 </div><!--End off row-->
-            </div><!--End off container -->
+            </div><!--End off container -->*@
         </section> <!--End off Debates section -->
         <!--Video section-->
         <section id="video" class="video">
@@ -308,7 +327,7 @@
                 </div>
             </div>
         </section><!--End off video section -->
-
+        @*   <div class="featured_slider">
         <div class="container">
             <div class="row">
                 <div class="main_featured m-top-100">
@@ -324,7 +343,6 @@
                 </div>
             </div>
         </div>
-        <div class="featured_slider">
             <div>
                 <div class="featured_img">
                     <img src="~/Theme/assets/images/fprojects/1.jpg" alt="" />
@@ -355,13 +373,13 @@
                     <a href="~/Theme/assets/images/fprojects/5.jpg" class="popup-img"></a>
                 </div>
             </div>
-        </div><!-- End off featured slider -->
+        </div><!-- End off featured slider -->*@
         <!--Magazine Section-->
         <section id="mag" class="service">
             <div class="container">
                 <div class="row">
                     <div class="main_service roomy-100">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1  ">
                             <div class="head_title text-center">
                                 <h2>MAGAZINE</h2>
                                 <div class="separator_auto"></div>
@@ -509,7 +527,7 @@
                 </div><!--End off row -->
             </div><!--End off container -->
         </section><!-- End off Impress section-->
-        <!--Profile Section-->
+   @*     <!--Profile Section-->
         <section id="profile" class="portfolio lightbg">
             <div class="container">
                 <div class="row">
@@ -610,7 +628,7 @@
                     </div>
                 </div><!--End off row -->
             </div><!--End off container -->
-        </section><!-- End off Portfolio section-->
+        </section><!-- End off Portfolio section-->*@
         <!--Skill Sections-->
         <section id="skill" class="skill roomy-100">
             <div class="container">
@@ -761,7 +779,7 @@
                 </div><!--End off row-->
             </div><!--End off container -->
         </section> <!--End off Testimonial section -->
-        <!--Events Section-->
+        @*    <!--Events Section-->
         <section id="events" class="pricing lightbg">
             <div class="container">
                 <div class="row">
@@ -848,7 +866,7 @@
                     </div>
                 </div><!--End off row-->
             </div><!--End off container -->
-        </section> <!--End off Pricing section -->
+        </section> <!--End off Pricing section -->*@
         <!--client brand section-->
         <section id="cbrand" class="cbrand">
             <div class="container">
@@ -1034,14 +1052,14 @@
             </div><!--End off container -->
         </section><!-- End off Blog section-->*@
 
-    <!--Maps Section-->
-    <div class="main_maps text-center fix">
-        <div class="overlay"></div>
-        <div class="maps_text">
-            <h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
-            <div id="map_canvas" class="mapheight"></div>
-        </div>
-    </div><!-- End off Maps Section-->
+    @*  <!--Maps Section-->
+        <div class="main_maps text-center fix">
+            <div class="overlay"></div>
+            <div class="maps_text">
+                <h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
+                <div id="map_canvas" class="mapheight"></div>
+            </div>
+        </div><!-- End off Maps Section-->*@
     <!--Contact Us Section-->
     <section id="contact" class="contact bg-mega fix">
         <div class="container">
@@ -1105,7 +1123,7 @@
         <div class="container">
             <div class="row">
                 <div class="main_footer text-center p-top-40 p-bottom-30 text-white">
-                    <p >
+                    <p>
 
                         @*<i class="fa fa-address-book"></i>*@
 
