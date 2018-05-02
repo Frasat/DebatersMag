@@ -12,8 +12,6 @@
     <link href="~/Theme/assets/css/Fonts1.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts2.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts3.css" rel="stylesheet" />
-    <link href="~/Theme/assets/icons/style.css" rel="stylesheet" type="text/css">
-
     @*<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">*@
     @*<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">*@
@@ -35,8 +33,6 @@
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="~/Theme/assets/js/daypilot/daypilot-all.min.js" asp-append-version="true"></script>
-
     <script src="~/Theme/assets/js/mag-img-slider.js"></script>
 </head>
 
@@ -82,22 +78,22 @@
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Quaid day </a></h6>
-                                    <p class="m-top-10">@*2x -*@ <span class="fa-calendar-check-o">25 Dece</span></p>
+                                    <p class="m-top-10">2x - <span class="fa-calendar-check-o">25 Dece</span></p>
                                 </li>
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Iqbal Day </a></h6>
-                                    <p class="m-top-10">@*2x -*@ <span class="fa-calendar">9 Nov</span></p>
+                                    <p class="m-top-10">2x - <span class="fa-calendar">9 Nov</span></p>
                                 </li>
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Women's Day</a></h6>
-                                    <p class="m-top-10">@*2x -*@ <span class="fa-calculator">8 March</span></p>
+                                    <p class="m-top-10">2x - <span class="fa-calculator">8 March</span></p>
                                 </li>
                                 <!---- More List ---->
                                 <li class="total">
-                                    @*<span class="pull-right"><strong>Total</strong>: </span>*@
-                                    <a href="/Main/Eindex" class="btn  bt">All Events</a>
+                                    <span class="pull-right"><strong>Total</strong>: </span>
+                                    <a href="#" class="btn cart-list">Debates</a>
                                 </li>
                             </ul>
                         </li>
@@ -111,29 +107,22 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="#brand">
+                 @*  <a class="navbar-brand" href="#brand">
                         <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
                         <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
-                    </a>
+                    </a>*@
                 </div>
                 <!-- End Header Navigation -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="/Home/Debate">Debates</a></li>
-                        <li><a href="/Home/Magzine">Magzines</a></li>
-                        <li><a href="/Home/Profile">Profile</a></li>
-                        <li>
-                            <a href="/Main/Eindex">Events</a>
-
-                           
-
-
-
-                        </li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#debates">Debates</a></li>
+                        <li><a href="#mag">Magzines</a></li>
+                       @* <li><a href="#profile">Profile</a></li>*@
+                       @* <li><a href="#events">Events</a></li>*@
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -142,24 +131,24 @@
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                    <h6 class="title">Custom Pages</h6>
+                    <h6 class="title">jOIN US</h6>
                     <ul class="link">
 
-                        
-                        <li><a href="#">Add Debate</a></li>
-                        <li> <a href=" #"> Write Debate</a></li>
-                        <li> <a href="#">Edit Debate</a> </li>
+
+                        <li><a href="/First/Login">Sign In</a></li>
+                        <li> <a href="/First/AddUser"> Sign Up</a></li>
+                      @*  <li> <a href="#">Edit Debate</a> </li>
                         <li><a href="#">Order Debate</a></li>
                         <li><a href="#"> Add Article</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>*@
                     </ul>
                 </div>
 
 
-               
 
 
-                <div class="widget">
+
+           @*    <div class="widget">
                     <h6 class="title">Additional Links</h6>
                     <ul class="link">
                         <li><a href="#"></a></li>
@@ -167,13 +156,13 @@
                         <li><a href="#">Achievements</a></li>
                         <li><a href="#">Discussion </a></li>
                     </ul>
-                </div>
+                </div>*@
             </div>
             <!-- End Side Menu -->
         </nav>
 
         <!--Home Sections-->
-        <section id="hello" class="home bg-mega">
+        <section id="home" class="home bg-mega">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -189,81 +178,101 @@
                 </div><!--End off row-->
             </div><!--End off container -->
         </section> <!--End off Home Sections-->
-        <!--About Sections-->
-        <section id="about" class="about roomy-100">
+        <!--Debates Sections-->
+        <section id="debates" class="about roomy-100">
             <div class="container">
-                <div class="row">
-                    <div class="main_about">
-                        <div class="col-md-6">
-                            <div class="about_content">
-                                <h2>ABOUT DEBATER'S MAG</h2>
-                                <div class="separator_left"></div>
-                                <p>
-                                  We will provide Debate  on your Demand.
-                                </p>
-                                @* <div class="about_btns m-top-40">
-            <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
-        </div>*@
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about_accordion wow fadeIn">
-                                <div id="faq_main_content" class="faq_main_content"> Master
-                                    <h6><i class="fa fa-angle-right"></i> DEBATES </h6>
-                
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                We will provide debates for every special events on your demand and ehance creativity  with Articles.
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-1 -->
-
-                                    <h6 class="open"><i class="fa fa-angle-right"></i> OUR MAGAZINE</h6>
-                                   
-                                    <div class="open">
-                                        <div class="content">
-                                            <p>
-                                                Farah Riaz 
-                                                Raiyha Maryam
-                                                Safa Shakir
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-2 -->
-                                    <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                Text
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-3 -->
-                                    <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
-
-                                  
-
-                                    <div>
-                                        <div class="content">
-                                            <p>
-                                                On Demand
-                                                For every event
-                                            </p>
-                                        </div>
-                                    </div> <!-- End off accordion item-4 -->
+                <div class="container">
+                    <div class="head_title text-center">
+                        <h2>DEBATES</h2>
+                        <div class="separator_auto"></div>
+                        <div class="row">
+                            <div class="main_impress text-center">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <h2 class="text-white text-uppercase">Impressed?  Let’s work together</h2>
+                                    <p class="m-top-40 text-white">
+                                        Text
+                                    </p>
+                                    <div class="impress_btns m-top-30">
+                                        <a href="/Main/Article" class="btn btn-primary m-top-20">view all debates</a>
+                                        <a href="" class="btn btn-default m-top-20">HIRE US</a>
+                                    </div>
                                 </div>
                             </div>
+                        </div><!--End off row -->
+                    </div><!--End off container -->
+                    @*<div class="row">
+            <div class="main_about">
+                <div class="col-md-6">
+                    <div class="about_content">
+                        <h2>ABOUT DEBATER'S MAG</h2>
+                        <div class="separator_left"></div>
+                        <p>
+                            We will provide Debate  on your Demand.
+                        </p>
+                        @* <div class="about_btns m-top-40">
+                            <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
                         </div>
                     </div>
-                </div><!--End off row-->
-            </div><!--End off container -->
-            <br />
+                </div>
+                <div class="col-md-6">
+                    <div class="about_accordion wow fadeIn">
+                        <div id="faq_main_content" class="faq_main_content">
+                            Master
+                            <h6><i class="fa fa-angle-right"></i> DEBATES </h6>
+
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        We will provide debates for every special events on your demand and ehance creativity  with Articles.
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-1 -->
+
+                            <h6 class="open"><i class="fa fa-angle-right"></i> OUR MAGAZINE</h6>
+
+                            <div class="open">
+                                <div class="content">
+                                    <p>
+                                        Farah Riaz
+                                        Raiyha Maryam
+                                        Safa Shakir
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-2 -->
+                            <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        Text
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-3 -->
+                            <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
+
+
+
+                            <div>
+                                <div class="content">
+                                    <p>
+                                        On Demand
+                                        For every event
+                                    </p>
+                                </div>
+                            </div> <!-- End off accordion item-4 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--End off row-->*@
+                </div><!--End off container -->
+            @* <br />
             <br />
             <br />
             <br />
             <hr />
             <br />
-            <br />
-            <div class="container">
+            <br />*@
+            @*   <div class="container">
                 <div class="row">
                     <div class="about_bottom_content">
                         <div class="col-md-4">
@@ -301,14 +310,14 @@
                                     <h6 class="m-top-20">WE LOVE MINIMALISM</h6>
                                 </div>
                                 <p class="m-top-20">
-                                    
+
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div><!--End off row-->
-            </div><!--End off container -->
-        </section> <!--End off About section -->
+            </div><!--End off container -->*@
+        </section> <!--End off Debates section -->
         <!--Video section-->
         <section id="video" class="video">
             <div class="overlay"></div>
@@ -318,7 +327,7 @@
                 </div>
             </div>
         </section><!--End off video section -->
-
+        @*   <div class="featured_slider">
         <div class="container">
             <div class="row">
                 <div class="main_featured m-top-100">
@@ -327,14 +336,13 @@
                             <h2>FEATURED WORK</h2>
                             <div class="separator_auto"></div>
                             <p>
-                               
+
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="featured_slider">
             <div>
                 <div class="featured_img">
                     <img src="~/Theme/assets/images/fprojects/1.jpg" alt="" />
@@ -365,19 +373,19 @@
                     <a href="~/Theme/assets/images/fprojects/5.jpg" class="popup-img"></a>
                 </div>
             </div>
-        </div><!-- End off featured slider -->
-        <!--Service Section-->
-        <section id="service" class="service">
+        </div><!-- End off featured slider -->*@
+        <!--Magazine Section-->
+        <section id="mag" class="service">
             <div class="container">
                 <div class="row">
                     <div class="main_service roomy-100">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1  ">
                             <div class="head_title text-center">
                                 <h2>MAGAZINE</h2>
                                 <div class="separator_auto"></div>
 
                                 <!--you can copy the below code to your htm
-    page-----------------------------begin--->
+                            page-----------------------------begin--->
                                 <!--change the width and height value as you want.-->
                                 <!-- Do change "index.htm" to your real html name of the flippingbook-->
                                 <iframe style="width:100%;height:650px" src="http://online.fliphtml5.com/pnrb/kzqr/"
@@ -385,7 +393,7 @@
                                         allowtransparency="true"></iframe>
 
                                 <!--you can copy the above code to your htm
-    page-----------------------------end--->
+                            page-----------------------------end--->
 
                             </div>
                         </div>
@@ -461,40 +469,40 @@
                                 </div>
                                 <!--/well-->
 
-                           
+
                             </div>
                         </div>
                         @*End-of-Mag-Image-Slider*@
                         @*  <div class="col-md-4">
-            <div class="service_item">
-                <i class="icofont icofont-light-bulb"></i>
-                <h6 class="m-top-30">BRANDING</h6>
-                <div class="separator_small"></div>
-                <p>
-                    Text
-                </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service_item">
-                <i class="icofont icofont-imac"></i>
-                <h6 class="m-top-30">BRANDING</h6>
-                <div class="separator_small"></div>
-                <p>
-                    Text
-                </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service_item">
-                <i class="icofont icofont-video"></i>
-                <h6 class="m-top-30">BRANDING</h6>
-                <div class="separator_small"></div>
-                <p>
-                    Text
-                </p>
-            </div>
-        </div>*@
+                            <div class="service_item">
+                                <i class="icofont icofont-light-bulb"></i>
+                                <h6 class="m-top-30">BRANDING</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Text
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <i class="icofont icofont-imac"></i>
+                                <h6 class="m-top-30">BRANDING</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Text
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <i class="icofont icofont-video"></i>
+                                <h6 class="m-top-30">BRANDING</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Text
+                                </p>
+                            </div>
+                        </div>*@
                     </div>
                 </div><!--End off row -->
             </div><!--End off container -->
@@ -519,8 +527,8 @@
                 </div><!--End off row -->
             </div><!--End off container -->
         </section><!-- End off Impress section-->
-        <!--Portfolio Section-->
-        <section id="portfolio" class="portfolio lightbg">
+   @*     <!--Profile Section-->
+        <section id="profile" class="portfolio lightbg">
             <div class="container">
                 <div class="row">
                     <div class="main_portfolio roomy-100">
@@ -529,7 +537,7 @@
                                 <h2>OUR PORTOFLIO</h2>
                                 <div class="separator_auto"></div>
                                 <p>
-                                   
+
                                 </p>
                             </div>
                         </div>
@@ -620,7 +628,7 @@
                     </div>
                 </div><!--End off row -->
             </div><!--End off container -->
-        </section><!-- End off Portfolio section-->
+        </section><!-- End off Portfolio section-->*@
         <!--Skill Sections-->
         <section id="skill" class="skill roomy-100">
             <div class="container">
@@ -631,7 +639,7 @@
                                 <h2>Our skill</h2>
                                 <div class="separator_left"></div>
                                 <p>
-                                   
+
                                 </p>
                             </div>
                         </div>
@@ -771,8 +779,8 @@
                 </div><!--End off row-->
             </div><!--End off container -->
         </section> <!--End off Testimonial section -->
-        <!--Pricing Section-->
-        <section id="pricing" class="pricing lightbg">
+        @*    <!--Events Section-->
+        <section id="events" class="pricing lightbg">
             <div class="container">
                 <div class="row">
                     <div class="main_pricing roomy-100">
@@ -858,7 +866,7 @@
                     </div>
                 </div><!--End off row-->
             </div><!--End off container -->
-        </section> <!--End off Pricing section -->
+        </section> <!--End off Pricing section -->*@
         <!--client brand section-->
         <section id="cbrand" class="cbrand">
             <div class="container">
@@ -925,50 +933,67 @@
                 </div><!--End off row -->
             </div><!--End off container -->
         </section><!-- End off Impress section-->
-        <!--Blog Section-->
-        <section id="blog" class="blog">
+        <!--About Us Section-->
+        <section id="about" class="about roomy-100">
             <div class="container">
                 <div class="row">
-                    <div class="main_blog text-center roomy-100">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <div class="head_title text-center">
-                                <h2>RECENT BLOGS</h2>
-                                <div class="separator_auto"></div>
+                    <div class="main_about">
+                        <div class="col-md-6">
+                            <div class="about_content">
+                                <h2>ABOUT DEBATER'S MAG</h2>
+                                <div class="separator_left"></div>
                                 <p>
-                                    Text
+                                    We will provide Debate  on your Demand.
                                 </p>
+                                @* <div class="about_btns m-top-40">
+                                    <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
+                                </div>*@
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="blog_item m-top-20">
-                                <div class="blog_item_img">
-                                    <img src="~/Theme/assets/images/Blog/1.jpg" alt="" />
-                                </div>
-                                <div class="blog_text roomy-40">
-                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
-                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="blog_item m-top-20">
-                                <div class="blog_item_img">
-                                    <img src="~/Theme/assets/images/Blog/2.jpg" alt="" />
-                                </div>
-                                <div class="blog_text roomy-40">
-                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
-                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="blog_item m-top-20">
-                                <div class="blog_item_img">
-                                    <img src="assets/images/Blog/3.jpg" alt="" />
-                                </div>
-                                <div class="blog_text roomy-40">
-                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
-                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                        <div class="col-md-6">
+                            <div class="about_accordion wow fadeIn">
+                                <div id="faq_main_content" class="faq_main_content">
+                                    Master
+                                    <h6><i class="fa fa-angle-right"></i> DEBATES </h6>
+
+                                    <div>
+                                        <div class="content">
+                                            <p>
+                                                We will provide debates for every special events on your demand and ehance creativity  with Articles.
+                                            </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-1 -->
+
+                                    <h6 class="open"><i class="fa fa-angle-right"></i> OUR MAGAZINE</h6>
+
+                                    <div class="open">
+                                        <div class="content">
+                                            <p>
+                                                Farah Riaz
+                                                Safa Shakir
+                                            </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-2 -->
+                                    <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
+                                    <div>
+                                        <div class="content">
+                                            <p>
+                                                Text
+                                            </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-3 -->
+                                    <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
+
+
+
+                                    <div>
+                                        <div class="content">
+                                            <p>
+                                                On Demand
+                                                For every event
+                                            </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-4 -->
                                 </div>
                             </div>
                         </div>
@@ -976,88 +1001,139 @@
                 </div><!--End off row -->
             </div><!--End off container -->
         </section><!-- End off Blog section-->
-        <!--Maps Section-->
+        @* <div class="container">
+        <div class="row">
+            <div class="main_blog text-center roomy-100">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="head_title text-center">
+                        <h2>RECENT BLOGS</h2>
+                        <div class="separator_auto"></div>
+                        <p>
+                            Text
+                        </p>
+                    </div>
+                </div>*@
+        @*
+        <div class="col-md-4">
+            <div class="blog_item m-top-20">
+                <div class="blog_item_img">
+                    <img src="~/Theme/assets/images/Blog/1.jpg" alt="" />
+                </div>
+                <div class="blog_text roomy-40">
+                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="blog_item m-top-20">
+                <div class="blog_item_img">
+                    <img src="~/Theme/assets/images/Blog/2.jpg" alt="" />
+                </div>
+                <div class="blog_text roomy-40">
+                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="blog_item m-top-20">
+                <div class="blog_item_img">
+                    <img src="assets/images/Blog/3.jpg" alt="" />
+                </div>
+                <div class="blog_text roomy-40">
+                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>
+                </div>
+            </div>
+        </div>*@
+    </div>
+    @*     </div><!--End off row -->
+            </div><!--End off container -->
+        </section><!-- End off Blog section-->*@
+
+    @*  <!--Maps Section-->
         <div class="main_maps text-center fix">
             <div class="overlay"></div>
             <div class="maps_text">
                 <h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
                 <div id="map_canvas" class="mapheight"></div>
             </div>
-        </div><!-- End off Maps Section-->
-        <!--Contact Us Section-->
-        <section id="contact" class="contact bg-mega fix">
-            <div class="container">
-                <div class="row">
-                    <div class="main_contact roomy-100 text-white">
-                        <div class="col-md-4">
-                            <div class="rage_widget">
-                                <div class="widget_head">
-                                    <h3 class="text-white">Debater's Mag</h3>
-                                    <div class="separator_small"></div>
-                                </div>
-                                <p>
-                                    We are helping people to give a voice to their thoughts. If you have any query or suggestion about our services, kindly contact us.
-                                    Don't forget to give your feedback as well because we value it.
-                                </p>
-                                <div class="widget_socail m-top-30">
-                                    <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-vimeo"></i></a></li>
-                                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
+        </div><!-- End off Maps Section-->*@
+    <!--Contact Us Section-->
+    <section id="contact" class="contact bg-mega fix">
+        <div class="container">
+            <div class="row">
+                <div class="main_contact roomy-100 text-white">
+                    <div class="col-md-4">
+                        <div class="rage_widget">
+                            <div class="widget_head">
+                                <h3 class="text-white">Debater's Mag</h3>
+                                <div class="separator_small"></div>
+                            </div>
+                            <p>
+                                We are helping people to give a voice to their thoughts. If you have any query or suggestion about our services, kindly contact us.
+                                Don't forget to give your feedback as well because we value it.
+                            </p>
+                            <div class="widget_socail m-top-30">
+                                <ul class="list-inline">
+                                    <li><a href="#contact"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa fa-vimeo"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-md-8 sm-m-top-30">
-                            <form class="" action="subcribe.php">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input id="first_name" name="first_name" type="text" placeholder="Name" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="form-group text-center">
-                                            <a href="" class="btn btn-primary">SEND MESSAGE</a>
-                                        </div>
+                    </div>
+                    <div class="col-md-8 sm-m-top-30">
+                        <form class="" action="subcribe.php">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input id="first_name" name="first_name" type="text" placeholder="Name" class="form-control" required="">
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                </div><!--End off row -->
-            </div><!--End off container -->
-        </section><!--End off Contact Section-->
-        <!-- scroll up-->
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div><!-- End off scroll up -->
-
-        <footer id="footer" class="footer bg-black">
-            <div class="container">
-                <div class="row">
-                    <div class="main_footer text-center p-top-40 p-bottom-30">
-                        <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made with
-                            <i class="fa fa-heart"></i>
-                            by
-                            <a target="_blank" href="https://bootstrapthemes.co">Bootstrap Themes</a>
-                            2016. All Rights Reserved
-                        </p>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <a href="" class="btn btn-primary">SEND MESSAGE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div><!--End off row -->
+        </div><!--End off container -->
+    </section><!--End off Contact Section-->
+    <!-- scroll up-->
+    <div class="scrollup">
+        <a href="#"><i class="fa fa-chevron-up"></i></a>
+    </div><!-- End off scroll up -->
+
+    <footer id="footer" class="footer bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="main_footer text-center p-top-40 p-bottom-30 text-white">
+                    <p>
+
+                        @*<i class="fa fa-address-book"></i>*@
+
+                        <h3 class="fa-lightbulb">Debater's Mag (Voice of Thoughts)</h3>
+
+                    </p>
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
     </div>@RenderSection("Scripts", required: false)

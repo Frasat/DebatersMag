@@ -42,6 +42,13 @@ namespace DebatersMag
             services.AddDbContext<DebmagContext>(options =>
                options.UseSqlServer(Configuration.GetConnectionString("ConStr")));
             services.AddMvc();
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+            //   _testSecret = Configuration["MySecret"];
+        }
             services.AddDbContext<DebmagContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Constr")));
         
 
