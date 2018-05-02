@@ -9,18 +9,22 @@ using DebatersMag.Models;
 namespace DebatersMag.Controllers
 {
     public class HomeController : Controller
+
+
     {
+
+       
+
         public IActionResult Index()
         {
-            return View();
-        }
+            return View();        }
 
-       // public IActionResult About()
-       // {
-       //     ViewData["Message"] = "Your application description page.";
+        // public IActionResult About()
+        // {
+        //     ViewData["Message"] = "Your application description page.";
 
-       //     return View();
-       // }
+        //     return View();
+        // }
 
         public IActionResult Contact()
         {
@@ -52,6 +56,10 @@ namespace DebatersMag.Controllers
 
             return View();
         }
+
+       
+
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

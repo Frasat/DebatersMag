@@ -12,6 +12,8 @@
     <link href="~/Theme/assets/css/Fonts1.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts2.css" rel="stylesheet" />
     <link href="~/Theme/assets/css/Fonts3.css" rel="stylesheet" />
+    <link href="~/Theme/assets/icons/style.css" rel="stylesheet" type="text/css">
+
     @*<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">*@
     @*<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">*@
@@ -33,6 +35,8 @@
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="~/Theme/assets/js/daypilot/daypilot-all.min.js" asp-append-version="true"></script>
+
     <script src="~/Theme/assets/js/mag-img-slider.js"></script>
 </head>
 
@@ -78,22 +82,22 @@
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Quaid day </a></h6>
-                                    <p class="m-top-10">2x - <span class="fa-calendar-check-o">25 Dece</span></p>
+                                    <p class="m-top-10">@*2x -*@ <span class="fa-calendar-check-o">25 Dece</span></p>
                                 </li>
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Iqbal Day </a></h6>
-                                    <p class="m-top-10">2x - <span class="fa-calendar">9 Nov</span></p>
+                                    <p class="m-top-10">@*2x -*@ <span class="fa-calendar">9 Nov</span></p>
                                 </li>
                                 <li>
                                     <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
                                     <h6><a href="#">Women's Day</a></h6>
-                                    <p class="m-top-10">2x - <span class="fa-calculator">8 March</span></p>
+                                    <p class="m-top-10">@*2x -*@ <span class="fa-calculator">8 March</span></p>
                                 </li>
                                 <!---- More List ---->
                                 <li class="total">
-                                    <span class="pull-right"><strong>Total</strong>: </span>
-                                    <a href="#" class="btn cart-list">Debates</a>
+                                    @*<span class="pull-right"><strong>Total</strong>: </span>*@
+                                    <a href="/Main/Eindex" class="btn  bt">All Events</a>
                                 </li>
                             </ul>
                         </li>
@@ -120,7 +124,14 @@
                         <li><a href="/Home/Debate">Debates</a></li>
                         <li><a href="/Home/Magzine">Magzines</a></li>
                         <li><a href="/Home/Profile">Profile</a></li>
-                        <li><a href="#events">Events</a></li>
+                        <li>
+                            <a href="/Main/Eindex">Events</a>
+
+                           
+
+
+
+                        </li>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
