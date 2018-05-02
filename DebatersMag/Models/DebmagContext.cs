@@ -9,6 +9,8 @@ namespace DebatersMag.Models
         public virtual DbSet<Debates> Debates { get; set; }
         public virtual DbSet<Magazine> Magazine { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Events> Events { get; set; }
+
         public DebmagContext(DbContextOptions<DebmagContext> abc) : base(abc)
         {
 
@@ -114,6 +116,30 @@ namespace DebatersMag.Models
                     .HasColumnName("recovery email")
                     .HasMaxLength(50);
             });
+            modelBuilder.Entity<Events>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Color)
+                    .HasColumnName("Color")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.End)
+                    .HasColumnName("End")
+                    .HasColumnType("DateTime");
+
+                entity.Property(e => e.Start)
+                    .HasColumnName("Start")
+                    .HasColumnType("DateTime");
+
+                entity.Property(e => e.Text)
+                    .HasColumnName("Text")
+                    .HasMaxLength(50);
+
+
+            });
+
         }
     }
+
 }

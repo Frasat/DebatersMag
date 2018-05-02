@@ -16,5 +16,10 @@ namespace DebatersMag.Controllers
         {
             return View();
         }
+        public IActionResult Eindex()
+        {
+            return View();
+        }
+
     }
 }
