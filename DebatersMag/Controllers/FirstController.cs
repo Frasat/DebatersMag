@@ -34,10 +34,14 @@ namespace DebatersMag.Controllers
             {
                 try
                 {
-                    OurDBContext.Users.Add(U);
-                    OurDBContext.SaveChanges();
+                    if (ModelState.IsValid)
+                    {
+                        OurDBContext.Users.Add(U);
+                        OurDBContext.SaveChanges();
 
-                    Tr.Commit();
+                        Tr.Commit();
+                    }
+                    
 
 
                 }
