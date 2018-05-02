@@ -3,7 +3,101 @@
 @{
     ViewData["Title"] = "Login";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form with Glass Effect</title>
+    <style type="text/css">
+        body {
+            background-image: url(v);
+            background-size: cover;
+        }
 
+        .aa {
+            width: 360px;
+            height: 400px;
+            background-color: rgba(0,0,0,0.3);
+            margin: 0 auto;
+            margin-top: 40px;
+            padding-top: 10px;
+            border-radius: 30px;
+            padding-left: 50px;
+       
+            border-color: 15px;
+            color: white;
+            font-weight: bolder;
+            -webkit-box-shadow: inset -4px -4px rgba(255,0,0,0.3);
+            box-shadow: inset -4px -4px rgba(255,0,0,0.5);
+            font-size: 18px;
+        }
+
+            .aa input[type="Email"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+       
+                padding-left: 5px;
+            }
+
+            .aa input[type="password"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+             
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+
+            .aa input[type="submit"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #ff1c3e;
+                font-weight: bolder;
+            }
+            .aa input[type="text"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                padding-left: 5px;
+            }
+
+            .aa input[type="password"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+               
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+
+            .aa input[type="submit"] {
+                width: 200px;
+                height: 35px;
+                border: 0px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                
+                border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+    </style>
+</head>
+
+</html>
+<div class="aa">
 <h2>Login</h2>
 
 <h4>Users</h4>
@@ -12,30 +106,32 @@
     <div class="col-md-4">
         <form asp-action="Login" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            
-            
+
+
+
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
-                <input  asp-for="Email" type="email" id="useremail" name="useremail"class="form-control"  /> 
+                <input asp-for="Email" type="email" id="useremail" name="useremail" class="form-control"/>
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Password"  class="control-label"></label>
-                <input  asp-for="Password" type="password" id="userpassword" name="userpassword"class="form-control"/> 
-                <span asp-validation-for="Password"  class="text-danger"></span>
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" id="userpassword" name="userpassword" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-          
+
             <div class="form-group">
-                <input type="submit" value="submit" class="btn btn-default" />
+                <input type="submit" value="submit" class="btn btn-default "  />
             </div>
         </form>
     </div>
 </div>
+    
 
 <div>
     <a asp-action="AddUser">SignUp</a>
 </div>
+    </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
