@@ -69,7 +69,7 @@ namespace DebatersMag.Controllers
             {
               //  lblUsername.Text = Session("username");
                 //  Session["username"] = TextBox1.Text;
-                return RedirectToAction("/Main/Index");
+                return RedirectToAction("Index");
             }
             else
             {
