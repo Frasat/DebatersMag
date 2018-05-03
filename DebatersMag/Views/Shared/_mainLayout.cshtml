@@ -34,20 +34,7 @@
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="~/Theme/assets/js/mag-img-slider.js"></script>
-    <style>
-        .modal-backdrop.in {
-            filter: alpha(opacity=50);
-            opacity: -1.5;
-        }
-        .align_text {
-            text-align: left;
-            margin-top: 15px;
-        }
-        /*.test:after {
-            content: '\2807';
-            font-size: 100px;
-        }*/
-    </style>
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -79,67 +66,68 @@
                 </div>
             </div>
             <!-- End Top Search -->
-            <div class="container">
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-bell"></i>
-                                <span class="badge">3</span>
-                            </a>
-                            <ul class="dropdown-menu cart-list">
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Quaid day </a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar">25 Dece</span></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Iqbal Day </a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar">9 Nov</span></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Women's Day</a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar-o">8 March</span></p>
-                                </li>
-                                <!---- More List ---->
-                                <li class="total">
-                                    @*<span class="pull-right"><strong>Total</strong>: </span>*@
-                                    <a href="/Main/Eindex" class="btn cart-list">All Events</a>
-                                </li>
-                            </ul>
-                        </li>
-                        @*<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>*@
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                    </ul>
+            
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="list-group">
+                                <a href="/Main/List/"class="list-group" data-toggle="list">
+                                    <i class="fa fa-bell"></i>
+                                    @*<span class="badge"></span>*@
+                                </a>
+                                @*<ul class="dropdown-menu cart-list">*@
+                                    @*<li>
+                                        <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Quaid day </a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar">25 Dece</span></p>
+                                    </li>*@
+                                    @*<li>
+                                        <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Iqbal Day </a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar">9 Nov</span></p>
+                                    </li>*@
+                                    @*<li>
+                                        <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Women's Day</a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar-o">8 March</span></p>
+                                    </li>*@
+                                    <!---- More List ---->
+                                    @*<li class="total">
+                                        @*<span class="pull-right"><strong>Total</strong>: </span>
+                                        <a href="/Main/Eindex" class="btn cart-list">All Events</a>
+                                    </li>
+                                </ul>
+                            </li>*@
+                            @*<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>*@
+                            <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        @*  <a class="navbar-brand" href="#brand">
+                <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
+                <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
+            </a>*@
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#debates">Debates</a></li>
+                            <li><a href="#mag">Magzines</a></li>
+                            @* <li><a href="#profile">Profile</a></li>*@
+                            @* <li><a href="#events">Events</a></li>*@
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
                 </div>
-                <!-- End Atribute Navigation -->
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                 @*  <a class="navbar-brand" href="#brand">
-                        <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
-                        <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
-                    </a>*@
-                </div>
-                <!-- End Header Navigation -->
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#debates">Debates</a></li>
-                        <li><a href="#mag">Magzines</a></li>
-                       @* <li><a href="#profile">Profile</a></li>*@
-                       @* <li><a href="#events">Events</a></li>*@
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
 
             <!-- Start Side Menu -->
             <div class="side">
@@ -182,7 +170,7 @@
                 <div class="row">
                     <div class="main_home">
                         <div class="home_text">
-                            <h1 class="text-white">Debater’s <br /> Mag</h1>
+                            <h1 class="text-white">Debater's <br /> Mag!</h1>
                         </div>
                         @*<div class="home_btns m-top-40">
                             <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>
@@ -208,65 +196,8 @@
                                     </p>
                                     <div class="impress_btns m-top-30">
                                         <a href="/Main/Article" class="btn btn-primary m-top-20">view all debates</a>
-                                        @*<a href="#" class="btn btn-primary m-top-20">Start disussion</a>*@
-                                        <button type="button" class="btn btn-primary m-top-20" data-toggle="modal" data-target="#myModal">Start Discussion</button>
+                                        <a href="" class="btn btn-default m-top-20">Start disussion</a>
                                     </div>
-                                    <!--Awais Content goes here-->
-                                    <div class="modal " id="myModal" role="dialog" >
-                                        <div class="modal-dialog">
-
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">
-                                                        <div class="col-sm-3">
-                                                            <img src="~/Theme/assets/images/clients/4.jpg"class="img-responsive img-rounded" />
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <span>Muhammad Awais</span>
-                                                        </div>
-                                                       
-                                                    </h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                                    <div class="form-group">
-                                                        <div class="col-sm-4"><i class="fas fa-home fa-fw"></i> Like</div>
-                                                        <div class="col-sm-4"><i class="fas fa-info fa-fw"></i> Comment</div>
-                                                        <div class="col-sm-4"><i class="fas fa-book fa-fw"></i> Share</div>
-                                                    </div>
-                                                    <div class="form-group clearfix">
-                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
-                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 1</div>
-
-                                                    </div>
-                                                    <div class="form-group clearfix">
-                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
-                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 2</div>
-
-                                                    </div>
-                                                    <div class="form-group clearfix">
-                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
-                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 3</div>
-
-                                                    </div>
-                                                    <div class="form-group clearfix">
-                                                        @*<div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
-                                                        <div class="col-sm-10 align_text">Frasat Qudsia Comment 1</div>*@
-                                                        <input type="text" value="" placeholder="write your comment" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary m-top-20" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                              
-                                   <!--Content Ends here  -->
                                 </div>
                             </div>
                         </div><!--End off row -->
@@ -480,7 +411,7 @@
                                             <div class="item active">
                                                 <div class="row">
                                                     <div class="col-sm-3">
-                                                        <a href="#"><img src="~/Theme/assets/images/mag-img1.jpeg" alt="Image" class="img-responsive"></a>
+                                                        <a href="http://online.fliphtml5.com/pnrb/kzqr/"><img src="~/Theme/assets/images/mag-img1.jpeg" alt="Image" class="img-responsive"></a>
                                                     </div>
                                                     <div class="col-sm-3">
                                                         <a href="#x"><img src="~/Theme/assets/images/mag-img2.jpeg" alt="Image" class="img-responsive"></a>
@@ -725,7 +656,7 @@
                                     <div class="teamskillbar-bar"></div>
                                 </div> <!-- End Skill Bar -->
                                 <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                                    <h6>HTML / CSS</h6>
+                                    <h6>Discussion</h6>
                                     <div class="teamskillbar-bar"></div>
                                 </div> <!-- End Skill Bar -->
                             </div>
@@ -1235,7 +1166,7 @@
         }
 
     </script>
-   
+
 
     <script src="~/Theme/assets/js/plugins.js"></script>
     <script src="~/Theme/assets/js/main.js"></script>
