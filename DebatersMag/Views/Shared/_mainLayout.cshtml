@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="~/Theme/assets/js/mag-img-slider.js"></script>
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -65,67 +66,68 @@
                 </div>
             </div>
             <!-- End Top Search -->
-            <div class="container">
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-bell"></i>
-                                <span class="badge">3</span>
-                            </a>
-                            <ul class="dropdown-menu cart-list">
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Quaid day </a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar">25 Dece</span></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Iqbal Day </a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar">9 Nov</span></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" />*@</a>
-                                    <h6><a href="#">Women's Day</a></h6>
-                                    <p class="m-top-10"> <span class="fa-calendar-o">8 March</span></p>
-                                </li>
-                                <!---- More List ---->
-                                <li class="total">
-                                    @*<span class="pull-right"><strong>Total</strong>: </span>*@
-                                    <a href="/Main/Eindex" class="btn cart-list">All Events</a>
-                                </li>
-                            </ul>
-                        </li>
-                        @*<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>*@
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                    </ul>
+            
+                <div class="container">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="list-group">
+                                <a href="/Main/List/"class="list-group" data-toggle="list">
+                                    <i class="fa fa-bell"></i>
+                                    @*<span class="badge"></span>*@
+                                </a>
+                                @*<ul class="dropdown-menu cart-list">*@
+                                    @*<li>
+                                        <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Quaid day </a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar">25 Dece</span></p>
+                                    </li>*@
+                                    @*<li>
+                                        <a href="#" class="photo">@*<img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Iqbal Day </a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar">9 Nov</span></p>
+                                    </li>*@
+                                    @*<li>
+                                        <a href="#" class="photo"><img src="~/Theme/assets/images/thumb01.jpg" class="cart-thumb" alt="" /></a>
+                                        <h6><a href="#">Women's Day</a></h6>
+                                        <p class="m-top-10"> <span class="fa-calendar-o">8 March</span></p>
+                                    </li>*@
+                                    <!---- More List ---->
+                                    @*<li class="total">
+                                        @*<span class="pull-right"><strong>Total</strong>: </span>
+                                        <a href="/Main/Eindex" class="btn cart-list">All Events</a>
+                                    </li>
+                                </ul>
+                            </li>*@
+                            @*<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>*@
+                            <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        @*  <a class="navbar-brand" href="#brand">
+                <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
+                <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
+            </a>*@
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#debates">Debates</a></li>
+                            <li><a href="#mag">Magzines</a></li>
+                            @* <li><a href="#profile">Profile</a></li>*@
+                            @* <li><a href="#events">Events</a></li>*@
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
                 </div>
-                <!-- End Atribute Navigation -->
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                 @*  <a class="navbar-brand" href="#brand">
-                        <img src="~/Theme/assets/images/logo.png" class="logo logo-display m-top-10" alt="">
-                        <img src="~/Theme/assets/images/logo.jpg" class="logo logo-scrolled" alt="">
-                    </a>*@
-                </div>
-                <!-- End Header Navigation -->
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#debates">Debates</a></li>
-                        <li><a href="#mag">Magzines</a></li>
-                       @* <li><a href="#profile">Profile</a></li>*@
-                       @* <li><a href="#events">Events</a></li>*@
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
 
             <!-- Start Side Menu -->
             <div class="side">
@@ -168,7 +170,7 @@
                 <div class="row">
                     <div class="main_home">
                         <div class="home_text">
-                            <h1 class="text-white">Debater’s <br /> Mag</h1>
+                            <h1 class="text-white">Debater's <br /> Mag!</h1>
                         </div>
                         @*<div class="home_btns m-top-40">
                             <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-primary m-top-20">GET STARTED</a>

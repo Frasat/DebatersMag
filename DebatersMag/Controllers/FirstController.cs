@@ -22,6 +22,7 @@ namespace DebatersMag.Controllers
             
         }
 
+
         [HttpGet]
         public IActionResult AddUser()
         {

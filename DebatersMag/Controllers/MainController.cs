@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DebatersMag.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DebatersMag.Controllers
@@ -20,6 +21,17 @@ namespace DebatersMag.Controllers
         {
             return View();
         }
+        private DebmagContext OurDBContext = null;
 
-    }
+        public MainController(DebmagContext _OurDBContext)
+        {
+            OurDBContext = _OurDBContext;
+        }
+        public IActionResult List()
+        {
+
+            return View(OurDBContext.Events.ToList<Events>());
+        } 
+
 }
+    }
