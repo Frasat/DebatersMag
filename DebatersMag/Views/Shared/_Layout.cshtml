@@ -31,10 +31,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Debate">Debate</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Magazine">Magazine</a><li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Profile">Profile</a><li>
+                    <li><a asp-area="" asp-controller="Main" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Main" asp-action="Index/#debates">Debate</a></li>
+                    <li><a asp-area="" asp-controller="Main" asp-action="Index/#mag">Magazine</a><li>
+                 @* <li><a asp-area="" asp-controller="" asp-action="Profile">Profile</a><li>*@
     @*  <li class="menu-has-children dropdown-menu">
             <a asp-area="" asp-controller="Home" asp-action="Profile">Profile</a>
             <ul>
@@ -42,8 +42,8 @@
                 <li><a href="#">SignUp</a></li>
             </ul>
         </li>*@
-<li><a asp-area="" asp-controller="Home" asp-action="AboutUs">AboutUs</a></li>
-            <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+<li><a asp-area="" asp-controller="Main" asp-action="Index/#about">AboutUs</a></li>
+            <li><a asp-area="" asp-controller="Main" asp-action="Index/#contact">Contact</a></li>
         </ul>
 </div>
         </div>
