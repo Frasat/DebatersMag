@@ -35,7 +35,22 @@
     <link rel="stylesheet" href="~/Theme/assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="~/Theme/assets/js/mag-img-slider.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <style>
+        .modal-backdrop.in {
+            filter: alpha(opacity=50);
+            opacity: -1.5;
+        }
+
+        .align_text {
+            text-align: left;
+            margin-top: 15px;
+        }
+        /*.test:after {
+            content: '\2807';
+            font-size: 100px;
+        }*/
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -200,10 +215,68 @@
                                     </p>
                                     <div class="impress_btns m-top-30">
                                         <a href="/Main/Article" class="btn btn-primary m-top-20">view all debates</a>
-                                        <a href="" class="btn btn-default m-top-20">Start disussion</a>
+                                        @*<a href="" class="btn btn-default m-top-20">Start disussion</a>*@
+                                        <button type="button" class="btn btn-primary m-top-20" data-toggle="modal" data-target="#myModal">Start Discussion</button>
                                     </div>
+                                    <!--Awais Content goes here-->
+                                    <div class="modal " id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">
+                                                        <div class="col-sm-3">
+                                                            <img src="~/Theme/assets/images/clients/4.jpg" class="img-responsive img-rounded" />
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <span>Frasat Qudsia</span>
+                                                        </div>
+
+                                                    </h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-4"><i class="fas fa-home fa-fw"></i> Like</div>
+                                                        <div class="col-sm-4"><i class="fas fa-info fa-fw"></i> Comment</div>
+                                                        <div class="col-sm-4"><i class="fas fa-book fa-fw"></i> Share</div>
+                                                    </div>
+                                                    <div class="form-group clearfix">
+                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
+                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 1</div>
+
+                                                    </div>
+                                                    <div class="form-group clearfix">
+                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
+                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 2</div>
+
+                                                    </div>
+                                                    <div class="form-group clearfix">
+                                                        <div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
+                                                        <div class="col-sm-10 align_text"><b>Frasat Qudsia</b> Comment 3</div>
+
+                                                    </div>
+                                                    <div class="form-group clearfix">
+                                                        @*<div class="col-sm-2"><img src="~/Theme/assets/images/clients/5.jpg" /></div>
+                            <div class="col-sm-10 align_text">Frasat Qudsia Comment 1</div>*@
+                                                        <input type="text" value="" placeholder="write your comment" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary m-top-20" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!--Content Ends here  -->
                                 </div>
                             </div>
+                        </div>
                         </div><!--End off row -->
                     </div><!--End off container -->
                     @*<div class="row">
@@ -325,14 +398,14 @@
             </div><!--End off container -->*@
         </section> <!--End off Debates section -->
         <!--Video section-->
-        <section id="video" class="video">
+      @*  <section id="video" class="video">
             <div class="overlay"></div>
             <div class="main_video roomy-100 m-top-100 m-bottom-100 text-center">
                 <div class="video_text text-center">
                     <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-link"><span class="fa fa-play"></span></a>
                 </div>
             </div>
-        </section><!--End off video section -->
+        </section><!--End off video section -->*@
         @*   <div class="featured_slider">
         <div class="container">
             <div class="row">
@@ -513,7 +586,7 @@
                 </div><!--End off row -->
             </div><!--End off container -->
         </section> <!--End off Featured section-->
-        <!--Impress section-->
+      @*  <!--Impress section-->
         <section id="impress" class="impress roomy-100">
             <div class="overlay"></div>
             <div class="container">
@@ -532,7 +605,7 @@
                     </div>
                 </div><!--End off row -->
             </div><!--End off container -->
-        </section><!-- End off Impress section-->
+        </section><!-- End off Impress section-->*@
    @*     <!--Profile Section-->
         <section id="profile" class="portfolio lightbg">
             <div class="container">
@@ -659,10 +732,10 @@
                                     <h6>Articles</h6>
                                     <div class="teamskillbar-bar"></div>
                                 </div> <!-- End Skill Bar -->
-                                <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                                    <h6>Discussion</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div> <!-- End Skill Bar -->
+                                @* <div class="teamskillbar clearfix m-top-50" data-percent="90%">
+            <h6>HTML / CSS</h6>
+            <div class="teamskillbar-bar"></div>
+        </div> <!-- End Skill Bar -->*@
                             </div>
                         </div>
                     </div>
@@ -949,7 +1022,7 @@
                                 <h2>ABOUT DEBATER'S MAG</h2>
                                 <div class="separator_left"></div>
                                 <p>
-                                    We will provide Debate  on your Demand.
+                                    We provide educational and creative social environment to our community.
                                 </p>
                                 @* <div class="about_btns m-top-40">
                                     <a href="" class="btn btn-primary">DOWNLOAD NOW</a>
@@ -965,8 +1038,7 @@
                                     <div>
                                         <div class="content">
                                             <p>
-                                              Debate  for every special events on your demand.
-                                              
+                                                We will provide debates for every special events on your demand and ehance creativity  with Articles.
                                             </p>
                                         </div>
                                     </div> <!-- End off accordion item-1 -->
@@ -976,29 +1048,29 @@
                                     <div class="open">
                                         <div class="content">
                                             <p>
-                                                UPDATE ON  WEEKLY.
+                                                Farah Riaz
+                                                Safa Shakir
                                             </p>
                                         </div>
                                     </div> <!-- End off accordion item-2 -->
-                                    <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
+                                    @*    <h6> <i class="fa fa-angle-right"></i> GREAT SERVICE </h6>
                                     <div>
                                         <div class="content">
                                             <p>
-                                                JOINS US
-                                                GET DEBATE
-                                                GET REMINdER BEFORE EVENT
-                                           
+                                                Text
                                             </p>
                                         </div>
                                     </div> <!-- End off accordion item-3 -->
-                                    @*<h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
+                                    <h6><i class="fa fa-angle-right"></i>EVENT UPDATES </h6>
+
 
                                      Event Reminder 
 
                                     <div>
                                         <div class="content">
                                             <p>
-                                                
+                                                On Demand
+                                                For every event
                                             </p>
                                         </div>
                                     </div>*@ <!-- End off accordion item-4 -->

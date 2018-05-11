@@ -110,7 +110,7 @@ namespace DebatersMag.Models
                     .HasColumnName("password")
                     .HasMaxLength(50);
 
-                entity.Property(e => e.Phone).HasColumnName("phone");
+                entity.Property(e => e.phone).HasColumnName("phone");
 
                 entity.Property(e => e.RecoveryEmail)
                     .HasColumnName("recovery email")

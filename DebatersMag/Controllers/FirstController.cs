@@ -35,10 +35,14 @@ namespace DebatersMag.Controllers
             {
                 try
                 {
-                    OurDBContext.Users.Add(U);
-                    OurDBContext.SaveChanges();
+                    if (ModelState.IsValid)
+                    {
+                        OurDBContext.Users.Add(U);
+                        OurDBContext.SaveChanges();
 
-                    Tr.Commit();
+                        Tr.Commit();
+                    }
+                    
 
 
                 }
@@ -58,8 +62,10 @@ namespace DebatersMag.Controllers
         [HttpPost]
         public IActionResult Login(string useremail, string userpassword)
         {
-            Users obj = OurDBContext.Users.Where(abc => abc.Email == useremail).FirstOrDefault();
-            if (obj.Password == userpassword)
+            
+            Users obj = OurDBContext.Users.Where(abc => abc.Email == useremail && abc.Password == userpassword).FirstOrDefault();
+            //if (obj.Password == userpassword)
+            if (obj != null)
             {
               //  lblUsername.Text = Session("username");
                 //  Session["username"] = TextBox1.Text;
