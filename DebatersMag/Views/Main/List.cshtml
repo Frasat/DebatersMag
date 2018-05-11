@@ -4,21 +4,19 @@
     ViewData["Title"] = "List";
 }
 
-@*<h2>List</h2>*@
 <br>
 <br>
 <br>
 <br>
 <br>
+<a href="/Main/Eindex" class="btn btn-success btn-success">Add Event</a>
 <br>
 
-
-
-<a href="/Main/Eindex" class="btn btn-success btn-sm">Add Event</a>
+<h2>Upcoming Events are: <span class="label label-success">@Model.Count()</span></h2>
 
 
 
-<table class="table" id="mytable">
+<table id="mytable" class="fa-border">
     <thead>
         <tr>
             @*<th>
@@ -70,4 +68,4 @@
 
 
     </script>
-        }
+}
